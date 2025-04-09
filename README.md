@@ -2,14 +2,19 @@
 
 ## O que este sistema Faz?
 
-Este Sistema gera várias planilhas do excel automaticamente e que podem substituir o livro de relatório físico. Basicamente o sistema cria um Diretório nomeado **Relatorios_EBD** e dentro deste diretório gera diversos diretórios organizados por ano, mês e planilhas para cada domingo. 
+Este Sistema gera várias planilhas do excel automaticamente e também gera Relatórios Mensais, Trimestrais e Anual da EBD e tem por finalidade substituir o livro de relatório físico. Basicamente o sistema cria um Diretório nomeado **Relatorios_EBD** e dentro deste diretório gera diversos diretórios organizados por ano, mês e planilhas para cada domingo. 
 
 
 ![Planilha](images/planilha.png)
+![printscreen](images/tela_planilha.png)
 
 ### Sistema de diretórios criados pelo script:
 ![Diretórios com vários anos](images/diretorios.png)
 ![Diretório mês](images/formato.png)
+
+### Tela do Software e Relatórios gerados
+
+![printscreen](images/tela_relatorio.png)
 ![Relatório trimestral](images/Imagem%20colada.png)
 
 ## Utilização do sistema
@@ -28,11 +33,14 @@ CLASSES = [
 ```
 
 1. Utilizando o **Jupyter Notebook** ou o Vs Code com a extensão Jupyter para rodar o arquivo [gerando_diretorios_e_planilhas.ipynb](gerando_diretorios_e_planilhas.ipynb)
-2. Utilizando o [Google Colab](colab.research.google.com) para rodar [gerando_diretorios_e_planilhas.ipynb](gerando_diretorios_e_planilhas.ipynb).
-3. Rodando os scripts [gera_planilhas](gera_planilhas.py) e [gera_relatorio_ebd](gera_relatorio_ebd.py) após python3 diretamente no terminal.
+
+3. Rodando os scripts via terminal: ```python3 gera_planilhas.py```(Gera as planilhas para preenchimento) e ```python3 gera_relatorio_ebd.py ``` (Para gerar os Relatórios mensais, trimestrais e anuais).
+
+4. Com interface gráfica iniciada via terminal: ```python3 gerador_planilhas_GUI.py ``` e ``` python3 gerador_relatorio_gui.py```.
 
 ## Criação do executável
 
-Para melhorar a usabilidade, você pode criar os executáveis para os arquivos ```*.py``` com os comando ```pyinstaller --onefile --console gera_planilhas.py``` e também ```pyinstaller --onefile --console relatorio_ebd.py```. 
+Para melhorar a usabilidade, você pode criar os executáveis utilizando o *auto-py-to-exe*.
+- Digite ```auto-py-to-exe ``` e siga a instrução no browser.
 
 ## Muito Obrigado e deixe uma estrela se este sistema for útil.

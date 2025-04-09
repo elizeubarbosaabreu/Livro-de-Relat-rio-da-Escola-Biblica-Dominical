@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Diretório co planilhas de teste
+Relatorios_EBD/
+
+
 # Distribution / packaging
 .Python
 build/

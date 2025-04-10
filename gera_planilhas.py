@@ -11,11 +11,17 @@ print("Não digite planilhas existentes, senão serão substituídas.")
 inicio = int(input("Digite o ano inicial: "))
 fim = int(input("Digite o ano final: "))
 ANOS = range(inicio, fim+1)
-CLASSES = [
-    "Diretoria", "Abraão", "Samuel", "Ana", "Débora", "Venc. em Cristo",
-    "Miriã", "Lírio dos Vales", "Gideões", "Cam. p/ o Céu",
-    "Rosa de Saron", "Sold. de Cristo", "Querubins"
-]
+
+def carregar_classes(caminho_arquivo="classes.txt"):
+    try:
+        with open(caminho_arquivo, encoding="utf-8") as f:
+            return [linha.strip() for linha in f if linha.strip()]
+    except FileNotFoundError:
+        messagebox.showerror("Erro", f"Arquivo '{caminho_arquivo}' não encontrado.")
+        return []
+
+CLASSES = carregar_classes()
+
 
 COLUNAS = ["Classes", "Matriculados", "Ausentes", "Presentes", "Visitantes", "Total", "Bíblias", "Revistas", "Ofertas", "% de Presença"]
 MESES_PT = {
@@ -120,6 +126,7 @@ def cria_planilha_para_domingo(caminho, data):
         ws.column_dimensions[col_letter].width = max_length + 2
 
     wb.save(os.path.join(caminho, nome_arquivo))
+    
 
 def criar_estrutura_ebd(base_dir="Relatorios_EBD"):
     os.makedirs(base_dir, exist_ok=True)
@@ -136,3 +143,4 @@ def criar_estrutura_ebd(base_dir="Relatorios_EBD"):
 
 # Executar tudo
 criar_estrutura_ebd()
+print("Planilhas Criadas com sucesso")

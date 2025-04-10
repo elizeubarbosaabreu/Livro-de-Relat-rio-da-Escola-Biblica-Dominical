@@ -17,20 +17,17 @@ Este Sistema gera várias planilhas do excel automaticamente e também gera Rela
 ![printscreen](images/tela_relatorio.png)
 ![Relatório trimestral](images/Imagem%20colada.png)
 
-## Utilização do sistema
+## Configurações
 
 Existem mais de uma forma de utilizar este sistema. O requerimento é ter o Python instalado no sistema. Também será necessário criar um ambiente de variável (.env) e instalar os requerimentos com o comando ```pip install -r requirements.txt```.
 
-## Lembrete
+### Configuração das Classes
 
 Lembre-se de substituir a lista de classes pela de sua escola:
-```
-CLASSES = [
-    "Diretoria", "Abraão", "Samuel", "Ana", "Débora", "Venc. em Cristo",
-    "Miriã", "Lírio dos Vales", "Gideões", "Cam. p/ o Céu",
-    "Rosa de Saron", "Sold. de Cristo", "Querubins"
-]
-```
+
+- Edite o arquivo **classes.txt**
+
+### Formas de Utilização
 
 1. Utilizando o **Jupyter Notebook** ou o Vs Code com a extensão Jupyter para rodar o arquivo [gerando_diretorios_e_planilhas.ipynb](gerando_diretorios_e_planilhas.ipynb)
 

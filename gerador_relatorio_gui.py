@@ -8,11 +8,17 @@ from openpyxl.formatting.rule import CellIsRule
 from math import isclose
 
 BASE_DIR = "Relatorios_EBD"
-CLASSES = [
-    "Diretoria", "Abraão", "Samuel", "Ana", "Débora", "Venc. em Cristo",
-    "Miriã", "Lírio dos Vales", "Gideões", "Cam. p/ o Céu",
-    "Rosa de Saron", "Sold. de Cristo", "Querubins"
-]
+
+def carregar_classes(caminho_arquivo="classes.txt"):
+    try:
+        with open(caminho_arquivo, encoding="utf-8") as f:
+            return [linha.strip() for linha in f if linha.strip()]
+    except FileNotFoundError:
+        messagebox.showerror("Erro", f"Arquivo '{caminho_arquivo}' não encontrado.")
+        return []
+
+CLASSES = carregar_classes()
+
 COLUNAS_RELEVANTES = {
     "Matriculados": 2, "Ausentes": 3, "Presentes": 4,
     "Visitantes": 5, "Total": 6, "Bíblias": 7,

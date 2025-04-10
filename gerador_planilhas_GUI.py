@@ -6,11 +6,17 @@ from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
 
 BASE_DIR = "Relatorios_EBD"
-CLASSES = [
-    "Diretoria", "Abraão", "Samuel", "Ana", "Débora", "Venc. em Cristo",
-    "Miriã", "Lírio dos Vales", "Gideões", "Cam. p/ o Céu",
-    "Rosa de Saron", "Sold. de Cristo", "Querubins"
-]
+
+def carregar_classes(caminho_arquivo="classes.txt"):
+    try:
+        with open(caminho_arquivo, encoding="utf-8") as f:
+            return [linha.strip() for linha in f if linha.strip()]
+    except FileNotFoundError:
+        messagebox.showerror("Erro", f"Arquivo '{caminho_arquivo}' não encontrado.")
+        return []
+
+CLASSES = carregar_classes()
+
 
 CAMPOS = [
     "Classe", "Matriculados", "Ausentes", "Presentes", "Visitantes",

@@ -5,9 +5,11 @@
 ## O que este sistema Faz?
 
 Este Sistema gera várias planilhas do excel automaticamente e também gera Relatórios Mensais, Trimestrais e Anual da EBD e tem por finalidade substituir o livro de relatório físico. Basicamente o sistema irá criar um Diretório nomeado **Relatorios_EBD**, – talvez será necessário criar este diretório na mesma pasta de execução do criador de planilhas manualmente – e dentro deste diretório, irá gerar diversos diretórios organizados por ano, mês e planilhas para cada domingo. 
+Agora também gera o PDF para impressão do domingo atual.
 
 
 ![Planilha](images/planilha.png)
+![PDF exemplo](images/relatório%20pdf.png)
 
 
 ### Sistema de diretórios criados pelo script:
@@ -43,7 +45,7 @@ Modifique o arquivo **classes.txt** com o nome das classes de sua EBD.
 
 1. Utilizando o **Jupyter Notebook** ou o Vs Code com a extensão Jupyter para rodar o arquivo [gerando_diretorios_e_planilhas.ipynb](gerando_diretorios_e_planilhas.ipynb)
 
-2. Rodando os scripts via terminal: ```python3 gera_planilhas.py```(Gera as planilhas para preenchimento) e ```python3 gerador_relatorio_GUI.py ``` (Para gerar os Relatórios mensais, trimestrais e anuais).
+2. Rodando os scripts via terminal: ```python3 gera_planilhas.py```(Gera as planilhas para preenchimento), ```python3 domingo_atual.py```(Gerar pdf do relatório do domingo atual para impressão ) e ```python3 gerador_relatorio_GUI.py ``` (Para gerar os Relatórios mensais, trimestrais e anuais).
 
 #### Criação do executável
 

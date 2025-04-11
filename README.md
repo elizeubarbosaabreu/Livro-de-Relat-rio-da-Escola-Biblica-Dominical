@@ -1,12 +1,14 @@
 # Sistema de Relatório para Escola Bíblica Dominical
 
+**Toda a honra e glória a Deus eternamente!**
+
 ## O que este sistema Faz?
 
 Este Sistema gera várias planilhas do excel automaticamente e também gera Relatórios Mensais, Trimestrais e Anual da EBD e tem por finalidade substituir o livro de relatório físico. Basicamente o sistema irá criar um Diretório nomeado **Relatorios_EBD**, – talvez será necessário criar este diretório na mesma pasta de execução do criador de planilhas manualmente – e dentro deste diretório, irá gerar diversos diretórios organizados por ano, mês e planilhas para cada domingo. 
 
 
 ![Planilha](images/planilha.png)
-![printscreen](images/tela_planilha.png)
+
 
 ### Sistema de diretórios criados pelo script:
 ![Diretórios com vários anos](images/diretorios.png)

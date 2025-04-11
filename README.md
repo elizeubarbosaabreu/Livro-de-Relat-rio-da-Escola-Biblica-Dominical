@@ -33,7 +33,9 @@ Existem mais de uma forma de utilizar este sistema.
 
 1.  Utilizando o executáveis *.exe (caso esteja usando Windows).
 
-![Atenção](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=warning) Modifique o arquivo **classes.txt** com o nome das classes de sua EBD.
+![Atenção](images/warning_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png) **ATENÇÃO**
+
+Modifique o arquivo **classes.txt** com o nome das classes de sua EBD.
 
 #### Modo expert
 

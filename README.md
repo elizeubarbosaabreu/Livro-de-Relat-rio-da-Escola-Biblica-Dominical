@@ -19,25 +19,31 @@ Este Sistema gera várias planilhas do excel automaticamente e também gera Rela
 ![printscreen](images/tela_relatorio.png)
 ![Relatório trimestral](images/Imagem%20colada.png)
 
-## Configurações
+## Download e Configuração
 
-Existem mais de uma forma de utilizar este sistema. Caso queira mudar alguns detalhes no sistema utilizando python, o requerimento é ter o Python instalado no sistema. Também será necessário criar um ambiente de variável (.env) e instalar os requerimentos com o comando ```pip install -r requirements.txt```.
+### Download
 
-### Configuração das Classes
+Baixe o repositório >>> [clicando aqui](https://github.com/elizeubarbosaabreu/Livro-de-Relatorio-da-Escola-Biblica-Dominical/archive/refs/heads/main.zip).
 
-Lembre-se de substituir a lista de classes pela de sua escola:
+### Configurações
 
-- Edite o arquivo **classes.txt**
+Existem mais de uma forma de utilizar este sistema. 
 
-### Formas de Utilização
+#### Modo usuário Comum
+
+1.  Utilizando o executáveis *.exe (caso esteja usando Windows).
+
+![Atenção](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=warning) Modifique o arquivo **classes.txt** com o nome das classes de sua EBD.
+
+#### Modo expert
+
+ Caso queira mudar alguns detalhes no sistema utilizando python, o requerimento é ter o Python instalado no sistema. Também será necessário criar um ambiente de variável (.env) e instalar os requerimentos com o comando ```pip install -r requirements.txt```.
 
 1. Utilizando o **Jupyter Notebook** ou o Vs Code com a extensão Jupyter para rodar o arquivo [gerando_diretorios_e_planilhas.ipynb](gerando_diretorios_e_planilhas.ipynb)
 
-3. Rodando os scripts via terminal: ```python3 gera_planilhas.py```(Gera as planilhas para preenchimento) e ```python3 gerador_relatorio_GUI.py ``` (Para gerar os Relatórios mensais, trimestrais e anuais).
+2. Rodando os scripts via terminal: ```python3 gera_planilhas.py```(Gera as planilhas para preenchimento) e ```python3 gerador_relatorio_GUI.py ``` (Para gerar os Relatórios mensais, trimestrais e anuais).
 
-4. Utilizando o executáveis *.exe (caso esteja usando Windows).
-
-## Criação do executável
+#### Criação do executável
 
 Para melhorar a usabilidade, e os executáveis não funcione, você pode criar os executáveis utilizando o *auto-py-to-exe*.
 - Digite ```auto-py-to-exe ``` e siga a instrução no browser.

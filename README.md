@@ -37,7 +37,7 @@ Existem mais de uma forma de utilizar este sistema.
 
 ![Atenção](images/warning_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png) **ATENÇÃO**
 
-Modifique o arquivo **classes.txt** com o nome das classes de sua EBD.
+Modifique o arquivo **classes.txt** com o nome das classes (salas de aula) de sua EBD e o arquivo **igreja.txt** Com o nome da sua igreja.
 
 #### Modo expert
 

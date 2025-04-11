@@ -204,9 +204,9 @@ frame.pack()
 
 label_ano = ttk.Label(frame, text="Ano:")
 label_ano.grid(row=0, column=0, sticky="w")
-entry_ano = ttk.Combobox(frame, values=[str(a) for a in range(2020, 2031)])
+entry_ano = ttk.Combobox(frame, values=[str(a) for a in range(2020, 2051)])
 entry_ano.grid(row=0, column=1)
-entry_ano.set("2024")
+entry_ano.set("2025")
 
 label_mes = ttk.Label(frame, text="Mês:")
 label_mes.grid(row=1, column=0, sticky="w")

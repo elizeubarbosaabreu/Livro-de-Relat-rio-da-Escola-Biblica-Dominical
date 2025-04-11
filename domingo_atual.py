@@ -13,8 +13,8 @@ sleep(2)
 # Ajusta a localização para português
 locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
 
-DATA_ATUAL = datetime(2024, 1, 14)  # Data de teste fixada
-# DATA_ATUAL = datetime.now() # Para usar a data atual, descomente esta linha
+# DATA_ATUAL = datetime(2024, 1, 14)  # Data de teste fixada
+DATA_ATUAL = datetime.now() # Para usar a data atual, descomente esta linha
 DATA_ANTERIOR = DATA_ATUAL - timedelta(days=7)
 
 DIRETORIO = "Relatorios_EBD"

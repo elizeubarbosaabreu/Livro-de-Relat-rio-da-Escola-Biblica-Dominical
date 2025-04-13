@@ -23,14 +23,6 @@ Agora também gera o PDF para impressão do domingo atual.
 
 ## Download e Configuração
 
-### Download
-
-Baixe o repositório >>> [clicando aqui](https://github.com/elizeubarbosaabreu/Livro-de-Relatorio-da-Escola-Biblica-Dominical/archive/refs/heads/main.zip).
-
-### Configurações
-
-Existem mais de uma forma de utilizar este sistema. 
-
 #### Linux Ubuntu
 
 - Faça o download do arquivo **Ubuntu.zip** [neste link](https://github.com/elizeubarbosaabreu/Livro-de-Relatorio-da-Escola-Biblica-Dominical/blob/c4d6651f5e519288902356daa3d516c45b662263/dist/Ubuntu.zip), descompacte e siga as orientações do arquivo LEIAME.TXT para proceder a instalação e configuração do sistema.
@@ -44,6 +36,9 @@ Existem mais de uma forma de utilizar este sistema.
 - Lembre-se de modificar o arquivo **classes.txt** com o nome das classes (salas de aula) de sua EBD e o arquivo **igreja.txt** com o nome da sua igreja.
 
 #### Modo expert
+
+- Baixe o repositório >>> [clicando aqui](https://github.com/elizeubarbosaabreu/Livro-de-Relatorio-da-Escola-Biblica-Dominical/archive/refs/heads/main.zip).
+
 
  - Caso queira mudar alguns detalhes no sistema utilizando python, o requerimento é ter o Python instalado no sistema. Também será necessário criar um ambiente de variável (.env) e instalar os requerimentos com o comando ```pip install -r requirements.txt```.
 
